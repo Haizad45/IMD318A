@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+		<link rel="stylesheet" type="text/css" href="style8.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Gallery</div>
+    <div class="full-img" id="fullimgbox">
+     <img src="C:/Users/User/Desktop/img1.jpg" id="fullimg">
+     <span onclick="closeFullimg()">X</span>
+</div>
+    <ul class="nav-links">
+      <li><a href="file:///C:/Users/User/Desktop/IMD318/HOMEPAGE2.html">Home</a></li>
+      <li><a href="file:///C:/Users/User/Desktop/IMD318/biodata22.html">Biodata</a></li>
+      <li><a href="file:///C:/Users/User/Desktop/IMD318/Familyy1.html">Family</a></li>
+      <li><a href="file:///C:/Users/User/Desktop/IMD318/RESUME20.html">Resume</a></li>
+    </ul>
+  </nav>
+<center>
+<div style="border:5px double #28c9ac; text-align:center; width:70%" >
+<p><b>WELCOME TO MY GALLERY</b></p>
+</div>
+
+<div class="video-background">
+    <video autoplay muted loop>
+      <source src="C:\Users\User\Downloads\854982-hd_1280_720_25fps (1).mp4" type="video/mp4">
+    </video>
+  </div>
+</center>
+
+
+
+<div class="clock-container">
+  <div id="clock">00:00:00</div>
+</div>
+
+<script src="script02.js"></script>
+
+
+
+<div class="marquee">
+  <p>!!!THIS IS MY GALLERY!!!</p>
+</div>
+
+
+
+
+
+
+  <audio autoplay loop>
+    <source src="C:\Users\User\Downloads\WhatsApp Audio 2024-12-01 at 03.27.29.mpeg" type="audio/mpeg">
+  </audio>
+
+
+
+
+</center>
+<body>
+<div class="full-img" id="fullimgbox">
+     <img src="C:/Users/User/Desktop/img1.jpg" id="fullimg">
+     <span onclick="closeFullimg()">X</span>
+</div>
+<div class="img-gallery">
+     <img src="file:///C:/Users/User/Desktop/ghk..jpg"onclick="openFullimg(this.src)">
+     <img src="C:/Users/User/OneDrive/Pictures/img2.jpg" onclick="openFullimg(this.src)">
+     <img src="C:/Users/User/OneDrive/Pictures/img3.jpg" onclick="openFullimg(this.src)">
+     <img src="C:/Users/User/OneDrive/Pictures/img4.jpg" onclick="openFullimg(this.src)">
+     <img src="C:/Users/User/OneDrive/Pictures/img5.jpg" onclick="openFullimg(this.src)">
+     <img src="C:/Users/User/OneDrive/Pictures/img6.jpg" onclick="openFullimg(this.src)">
+     <img src="C:/Users/User/OneDrive/Pictures/img7.jpg" onclick="openFullimg(this.src)">
+     <img src="C:/Users/User/OneDrive/Pictures/img8.jpg "onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/img15.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/img12.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/img14.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/sad.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/img16.jpg "onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/IMG123.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Downloads/IMG_20241026_104057.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Downloads/IMG_20241025_215745.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Downloads/IMG_20241029_012555.jpg" onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Downloads/IMG_20241024_171724.jpg "onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/gambo.jpg "onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Desktop/gambo2.jpg "onclick="openFullimg(this.src)">
+     <img src="file:///C:/Users/User/Downloads/WhatsApp%20Image%202024-12-01%20at%2003.53.10.jpeg"onclick="openFullimg(this.src)">
+     
+     
+
+
+
+</div>
+
+<script>
+
+var fullimgbox = document.getElementById("fullimgbox");
+var fullimg = document.getElementById("fullimg");
+
+function openFullimg(pic){
+     fullimgbox.style.display = "flex";
+     fullimg.src = pic;
+}
+function closeFullimg(){
+     fullimgbox.style.display = "none";
+
+}
+
+
+
+</script>
+
+<center>
+
+
+
+  <div class="slideshow-container">
+    <!-- Videos -->
+    <video class="active" src="C:\Users\User\Downloads\document_6226511473099673859.mp4" controls></video>
+    <video src="C:\Users\User\Downloads\document_6226511473099673838.mp4" controls></video>
+    <video src="C:\Users\User\Downloads\IMG_2523.MOV" controls></video>
+    <video src="C:\Users\User\Downloads\IMG_5627.MOV" controls></video>
+
+    <!-- Next button -->
+    <button class="next-btn">Next</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="scriptgalleryvideo.js"></script>
+
+</center>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; MUHAMMAD HAIZAD BIN ZAINAL JCDIM1105E.</p>
+    </footer>
+
+
+</body>
+</html>
