@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ff6b6b, #f7b7a3, #23db95);
+  background-size: 400% 400%;
+  animation: bg 6s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+
+@keyframes bg {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+.bounce {
+  display: inline-block;
+  animation: bounceAnimation 1.5s ease infinite;
+}
+
+@keyframes bounceAnimation {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #f7b7a3;
+}
+
+
+main {
+  margin-top: 50px;
+}
+
+
+/* Transparent Container */
+.transparent-container {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+/* Clock and Calendar Styling */
+.clock, .calendar {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+.glow-text {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 10px;
+    animation: animated-text 5s linear infinite;
+}
+
+@keyframes animated-text {
+    0% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 0 10px #ef233c,
+            0 0 20px #ef233c,
+            0 0 40px #ef233c,
+            0 0 80px #ef233c,
+            0 0 100px #ef233c;
+    }
+    100% {
+        text-shadow: none;
+    }
+}
